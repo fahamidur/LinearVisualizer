@@ -13,3 +13,11 @@ class Tensor:
         return (
             f"[{self.obj[0, 0]} {self.obj[0, 1]} \n {self.obj[1, 0]} {self.obj[1, 1]}]"
         )
+
+    def reflect_on_x(self):
+        self.obj[0, 1] *= -1
+        self.obj[1, 1] *= -1
+
+    def reflect_on_y(self):
+        self.obj[0, 0] *= -1
+        self.obj[1, 0] *= -1
